@@ -23,7 +23,8 @@ const Queue1 = document.querySelector('.queue-1');
 
 const clientId = 'df8a7d7adfd843a58c4d39fb3e4ffb11';
 const clientSecret = '48e35d20ef0e4c3488d23d8de94e61a2';
-const redirectUri = 'http://127.0.0.1:5500/page2.html';
+// Update redirectUri to match your deployed URL
+const redirectUri = window.location.origin + '/page2.html';
 
 let audio = new Audio();
 let isPlaying = false;
